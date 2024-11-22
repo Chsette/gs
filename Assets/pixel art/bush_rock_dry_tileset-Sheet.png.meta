@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: a6efb35ad803d414089f82a8d7151d5e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 68
+        width: 234
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c77185655a0494babbcacbb79ece88
+      internalID: -1914870270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 48
+        width: 225
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586ceae925538bc4e87b9ddb13b65dff
+      internalID: -1137481708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 55
+        width: 306
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6be343326cdd41488bad34fa86d655e
+      internalID: 1225105063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 57
+        width: 265
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1e5144a9f7f0c4f9b85b6df4d201df
+      internalID: -1192570424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 27
+        width: 276
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe1aa95fae851841a47f6be8cbcb71e
+      internalID: -2092993931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 5
+        width: 288
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13ec99a3485955489ac486a25a39938
+      internalID: -623005514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 7
+        width: 300
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9489f288f4bff194881b0621204baa8b
+      internalID: -400536976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 49
+        width: 308
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bf4925771dd4647ad1dd273f4fa4a1
+      internalID: -371736313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3235
+        y: 58
+        width: 270
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9d8b2ee3a6fe440b93dc27137377a5
+      internalID: -1920454458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3539
+        y: 37
+        width: 283
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709f9318c74f67849afc85c9f8da5453
+      internalID: -1027229531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 57
+        width: 284
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f673a9e1f2eb54ca9978657ac38995
+      internalID: 1946205421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_rock_dry_tileset-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 49
+        width: 311
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9bf48a1892a1440bda274372fb7a8c
+      internalID: 1013319232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bush_rock_dry_tileset-Sheet_0: -1914870270
+      bush_rock_dry_tileset-Sheet_1: -1137481708
+      bush_rock_dry_tileset-Sheet_10: 2030815495
+      bush_rock_dry_tileset-Sheet_11: 522207886
+      bush_rock_dry_tileset-Sheet_12: 187178389
+      bush_rock_dry_tileset-Sheet_13: -1572486426
+      bush_rock_dry_tileset-Sheet_14: 1173962224
+      bush_rock_dry_tileset-Sheet_15: -1920454458
+      bush_rock_dry_tileset-Sheet_16: -1027229531
+      bush_rock_dry_tileset-Sheet_17: 1946205421
+      bush_rock_dry_tileset-Sheet_18: 2097134259
+      bush_rock_dry_tileset-Sheet_19: -938592654
+      bush_rock_dry_tileset-Sheet_2: 1225105063
+      bush_rock_dry_tileset-Sheet_20: 299890712
+      bush_rock_dry_tileset-Sheet_21: 42472678
+      bush_rock_dry_tileset-Sheet_22: -1934829133
+      bush_rock_dry_tileset-Sheet_23: 943926947
+      bush_rock_dry_tileset-Sheet_24: 818757373
+      bush_rock_dry_tileset-Sheet_25: -749961856
+      bush_rock_dry_tileset-Sheet_26: 1013319232
+      bush_rock_dry_tileset-Sheet_27: 1821897902
+      bush_rock_dry_tileset-Sheet_28: 709216568
+      bush_rock_dry_tileset-Sheet_29: -660019499
+      bush_rock_dry_tileset-Sheet_3: -1192570424
+      bush_rock_dry_tileset-Sheet_30: -1692492672
+      bush_rock_dry_tileset-Sheet_31: 1523113102
+      bush_rock_dry_tileset-Sheet_32: 473713355
+      bush_rock_dry_tileset-Sheet_33: -1984268411
+      bush_rock_dry_tileset-Sheet_34: -1341132908
+      bush_rock_dry_tileset-Sheet_35: 1398182240
+      bush_rock_dry_tileset-Sheet_36: 197299813
+      bush_rock_dry_tileset-Sheet_37: -1034414086
+      bush_rock_dry_tileset-Sheet_38: 1686627347
+      bush_rock_dry_tileset-Sheet_39: 800073608
+      bush_rock_dry_tileset-Sheet_4: -2092993931
+      bush_rock_dry_tileset-Sheet_40: -2045215707
+      bush_rock_dry_tileset-Sheet_41: -2076420303
+      bush_rock_dry_tileset-Sheet_42: 581329778
+      bush_rock_dry_tileset-Sheet_43: -171167287
+      bush_rock_dry_tileset-Sheet_44: 832919619
+      bush_rock_dry_tileset-Sheet_45: -1766902538
+      bush_rock_dry_tileset-Sheet_46: 449829885
+      bush_rock_dry_tileset-Sheet_47: 221714720
+      bush_rock_dry_tileset-Sheet_48: 517441885
+      bush_rock_dry_tileset-Sheet_49: 1374071776
+      bush_rock_dry_tileset-Sheet_5: -623005514
+      bush_rock_dry_tileset-Sheet_6: -379383989
+      bush_rock_dry_tileset-Sheet_7: -400536976
+      bush_rock_dry_tileset-Sheet_8: -1621903817
+      bush_rock_dry_tileset-Sheet_9: -371736313
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
