@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FloorChange : MonoBehaviour
-{    public GameObject intactTile; // Objeto do tileset intacto
+{   public GameObject intactTile; // Objeto do tileset intacto
     public GameObject brokenTile; // Objeto do tileset quebrado
     public float timeToBreak = 5f; // Tempo em segundos antes de o chão quebrar
     private float timer; // Temporizador para rastrear o tempo restante

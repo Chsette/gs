@@ -15,20 +15,22 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup = GetComponent<CanvasGroup>();
     }
     public void OnBeginDrag(PointerEventData eventData){
-        Debug.Log("OnPointerDowm");
+        Debug.Log("Beggin dragging");
+        canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
     }
      public void OnDrag(PointerEventData eventData){
-        Debug.Log("OnPointerDowm");
+        Debug.Log("Being dragged");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
      }
      public void OnEndDrag(PointerEventData eventData){
-        Debug.Log("OnPointerDowm");
+        Debug.Log("Not being dragged anymore");
+        canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
     }
         
     public void OnPointerDown(PointerEventData eventData) {
-         Debug.Log("OnPointerDowm");
+         Debug.Log("Pointer down");
     }
     
 }

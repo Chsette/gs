@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - "F\xF3ssil"
+  - Nuclear
+  - Biomassa
+  - "E\xF3lica"
   layers:
   - Default
   - TransparentFX
