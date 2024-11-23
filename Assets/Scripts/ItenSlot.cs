@@ -2,9 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class ItenSlot : MonoBehaviour, IDropHandler
 {
+    public TextMeshProUGUI health;
+    public GameObject cell;
+    public float scoreValue = 0f;
+    private float polutionRate;
+
+    public void SoloDepleted()
+    {
+        cell.SetActive(false);
+    }
+
+
+    void FixedUpdate()
+    {
+        health.text = ((int)scoreValue).ToString();
+        scoreValue += polutionRate * Time.fixedDeltaTime;
+    }
+
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("Dropou");
@@ -22,22 +40,22 @@ public class ItenSlot : MonoBehaviour, IDropHandler
             {
                 case "Fóssil":
                     Debug.Log("Item de tipo Fóssil foi dropado.");
-                    // Adicione a lógica específica para "Fóssil" aqui
+                    polutionRate = 20;
                     break;
 
                 case "Biomassa":
                     Debug.Log("Item de tipo Biomassa foi dropado.");
-                    // Adicione a lógica específica para "Biomassa" aqui
+                    polutionRate = 16;
                     break;
 
                 case "Eólica":
                     Debug.Log("Item de tipo Eólica foi dropado.");
-                    // Adicione a lógica específica para "Eólica" aqui
+                    polutionRate = 10;
                     break;
 
                 case "Nuclear":
                     Debug.Log("Item de tipo Nuclear foi dropado.");
-                    // Adicione a lógica específica para "Nuclear" aqui
+                    polutionRate = 2;
                     break;
 
                 default:
