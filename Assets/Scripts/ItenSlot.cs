@@ -20,8 +20,16 @@ public class ItenSlot : MonoBehaviour, IDropHandler
     void FixedUpdate()
     {
         health.text = ((int)scoreValue).ToString();
-        scoreValue += polutionRate * Time.fixedDeltaTime;
+        scoreValue -= polutionRate * Time.fixedDeltaTime;
+
+        int healthValue = int.Parse(health.text);
+
+        if (healthValue == 0)
+        {
+            SoloDepleted();
+        }
     }
+
 
     public void OnDrop(PointerEventData eventData)
     {
