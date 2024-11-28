@@ -9,7 +9,7 @@ public class ItenSlot : MonoBehaviour, IDropHandler
     public TextMeshProUGUI health;
     public GameObject cell;
     public TextMeshProUGUI carbonCredit;
-    public float scoreValue = 0f;
+    public float scoreValue = 100f;
     private float polutionRate;
     private int carbonPerSec;
 
@@ -21,17 +21,24 @@ public class ItenSlot : MonoBehaviour, IDropHandler
 
     void FixedUpdate()
     {
+        scoreValue = Mathf.Clamp(scoreValue, 0, 100);
+
         health.text = ((int)scoreValue).ToString();
+
         scoreValue += polutionRate * Time.fixedDeltaTime;
 
+        if (scoreValue >= 100)
+        {
+            polutionRate = 0f; 
+            scoreValue = 100;
+        }
 
-        int healthValue = int.Parse(health.text);
-
-        if (healthValue == 0)
+        if (scoreValue <= 0)
         {
             SoloDepleted();
         }
     }
+
 
 
     public void OnDrop(PointerEventData eventData)
