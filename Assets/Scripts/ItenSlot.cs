@@ -8,8 +8,10 @@ public class ItenSlot : MonoBehaviour, IDropHandler
 {
     public TextMeshProUGUI health;
     public GameObject cell;
+    public TextMeshProUGUI carbonCredit;
     public float scoreValue = 0f;
     private float polutionRate;
+    private int carbonPerSec;
 
     public void SoloDepleted()
     {
@@ -20,7 +22,8 @@ public class ItenSlot : MonoBehaviour, IDropHandler
     void FixedUpdate()
     {
         health.text = ((int)scoreValue).ToString();
-        scoreValue -= polutionRate * Time.fixedDeltaTime;
+        scoreValue += polutionRate * Time.fixedDeltaTime;
+
 
         int healthValue = int.Parse(health.text);
 
@@ -48,22 +51,27 @@ public class ItenSlot : MonoBehaviour, IDropHandler
             {
                 case "Fóssil":
                     Debug.Log("Item de tipo Fóssil foi dropado.");
-                    polutionRate = 20;
+                    polutionRate = -20;
                     break;
 
                 case "Biomassa":
                     Debug.Log("Item de tipo Biomassa foi dropado.");
-                    polutionRate = 16;
+                    polutionRate = -16;
                     break;
 
                 case "Eólica":
                     Debug.Log("Item de tipo Eólica foi dropado.");
-                    polutionRate = 10;
+                    polutionRate = -10;
                     break;
 
                 case "Nuclear":
                     Debug.Log("Item de tipo Nuclear foi dropado.");
-                    polutionRate = 2;
+                    polutionRate = -2;
+                    break;
+
+                case "Recuperacao":
+                    Debug.Log("Solo sendo recuperado.");
+                    polutionRate = 1;
                     break;
 
                 default:

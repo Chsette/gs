@@ -8,6 +8,7 @@ TagManager:
   - Nuclear
   - Biomassa
   - "E\xF3lica"
+  - Recuperacao
   layers:
   - Default
   - TransparentFX
