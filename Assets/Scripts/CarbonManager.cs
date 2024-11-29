@@ -10,6 +10,7 @@ public class CarbonManager : MonoBehaviour
     public GameObject windLock;
     public GameObject nuclearLock;
     public GameObject victoryScreen;
+    public AudioSource victorySound;
     private float totalCarbonCredit = 0;
 
     private void Awake()
@@ -22,6 +23,11 @@ public class CarbonManager : MonoBehaviour
             Destroy(gameObject);
         Time.timeScale = 1;
 
+    }
+
+    public void VictoryAchieved()
+    {
+        victorySound.Play();
     }
 
     public void DisableLock()
@@ -42,7 +48,9 @@ public class CarbonManager : MonoBehaviour
         {
             victoryScreen.SetActive(true);
             totalCarbonCredit = 0;
+            VictoryAchieved();
             Time.timeScale = 0;
+
         }
     }
     public void AddCarbonCredits(float value)

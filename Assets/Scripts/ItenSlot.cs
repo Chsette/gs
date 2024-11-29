@@ -9,12 +9,18 @@ public class ItenSlot : MonoBehaviour, IDropHandler
     public TextMeshProUGUI health;
     public GameObject cell;
     public float scoreValue = 100f;
+    public AudioSource celldrop;
     private float polutionRate;
     private float carbonValue;
 
     public void SoloDepleted()
     {
         cell.SetActive(false);
+    }
+
+    public void Celldropped()
+    {
+        celldrop.Play();
     }
 
     void FixedUpdate()
@@ -59,6 +65,7 @@ public class ItenSlot : MonoBehaviour, IDropHandler
                     Debug.Log("Item de tipo Fóssil foi dropado.");
                     polutionRate = -10;
                     carbonValue = 1;
+                    Celldropped();
                     break;
 
                 case "Biomassa":
@@ -66,6 +73,7 @@ public class ItenSlot : MonoBehaviour, IDropHandler
                     Debug.Log("Item de tipo Biomassa foi dropado.");
                     polutionRate = -8;
                     carbonValue = 5;
+                    Celldropped();
                     break;
 
                 case "Eólica":
@@ -73,6 +81,7 @@ public class ItenSlot : MonoBehaviour, IDropHandler
                     Debug.Log("Item de tipo Eólica foi dropado.");
                     polutionRate = -5;
                     carbonValue = 30;
+                    Celldropped();
                     break;
 
                 case "Nuclear":
@@ -80,12 +89,14 @@ public class ItenSlot : MonoBehaviour, IDropHandler
                     Debug.Log("Item de tipo Nuclear foi dropado.");
                     polutionRate = -2;
                     carbonValue = 100;
+                    Celldropped();
                     break;
 
                 case "Recuperacao":
                     Debug.Log("Solo sendo recuperado.");
                     polutionRate = 1;
                     carbonValue = 0;
+                    Celldropped();
                     break;
 
                 default:

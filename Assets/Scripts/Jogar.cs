@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Jogar : MonoBehaviour
 {
+    public AudioSource buttonPress;
+    public void ButtonPressed()
+    {
+        buttonPress.Play();
+    }
     public void GoToPlay()
     {
+        ButtonPressed();
         SceneManager.LoadScene("SampleScene");
     }
 }
