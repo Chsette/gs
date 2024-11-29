@@ -14,11 +14,14 @@ public class CarbonManager : MonoBehaviour
 
     private void Awake()
     {
+        totalCarbonCredit = 0;
         victoryScreen.SetActive(false);
         if (Instance == null)
             Instance = this;
         else
             Destroy(gameObject);
+        Time.timeScale = 1;
+
     }
 
     public void DisableLock()
@@ -38,6 +41,8 @@ public class CarbonManager : MonoBehaviour
         if (totalCarbonCredit >= 20000)
         {
             victoryScreen.SetActive(true);
+            totalCarbonCredit = 0;
+            Time.timeScale = 0;
         }
     }
     public void AddCarbonCredits(float value)

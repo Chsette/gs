@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class VoltarAoMenu : MonoBehaviour
 {
     public void GoToMenu()
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
