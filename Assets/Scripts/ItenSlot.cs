@@ -8,16 +8,14 @@ public class ItenSlot : MonoBehaviour, IDropHandler
 {
     public TextMeshProUGUI health;
     public GameObject cell;
-    public TextMeshProUGUI carbonCredit;
     public float scoreValue = 100f;
     private float polutionRate;
-    private int carbonPerSec;
+    private float carbonValue;
 
     public void SoloDepleted()
     {
         cell.SetActive(false);
     }
-
 
     void FixedUpdate()
     {
@@ -27,9 +25,12 @@ public class ItenSlot : MonoBehaviour, IDropHandler
 
         scoreValue += polutionRate * Time.fixedDeltaTime;
 
+        // Envia créditos de carbono acumulados para o CarbonManager
+        CarbonManager.Instance.AddCarbonCredits(carbonValue * Time.fixedDeltaTime);
+
         if (scoreValue >= 100)
         {
-            polutionRate = 0f; 
+            polutionRate = 0f;
             scoreValue = 100;
         }
 
@@ -38,8 +39,6 @@ public class ItenSlot : MonoBehaviour, IDropHandler
             SoloDepleted();
         }
     }
-
-
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -59,26 +58,31 @@ public class ItenSlot : MonoBehaviour, IDropHandler
                 case "Fóssil":
                     Debug.Log("Item de tipo Fóssil foi dropado.");
                     polutionRate = -20;
+                    carbonValue = 20;
                     break;
 
                 case "Biomassa":
                     Debug.Log("Item de tipo Biomassa foi dropado.");
                     polutionRate = -16;
+                    carbonValue = 100;
                     break;
 
                 case "Eólica":
                     Debug.Log("Item de tipo Eólica foi dropado.");
                     polutionRate = -10;
+                    carbonValue = 300;
                     break;
 
                 case "Nuclear":
                     Debug.Log("Item de tipo Nuclear foi dropado.");
                     polutionRate = -2;
+                    carbonValue = 10000;
                     break;
 
                 case "Recuperacao":
                     Debug.Log("Solo sendo recuperado.");
                     polutionRate = 1;
+                    carbonValue = 0;
                     break;
 
                 default:
