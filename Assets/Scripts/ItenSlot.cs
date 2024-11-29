@@ -57,26 +57,26 @@ public class ItenSlot : MonoBehaviour, IDropHandler
             {
                 case "Fóssil":
                     Debug.Log("Item de tipo Fóssil foi dropado.");
-                    polutionRate = -20;
-                    carbonValue = 20;
+                    polutionRate = -10;
+                    carbonValue = 1;
                     break;
 
                 case "Biomassa":
                     Debug.Log("Item de tipo Biomassa foi dropado.");
-                    polutionRate = -16;
-                    carbonValue = 100;
+                    polutionRate = -8;
+                    carbonValue = 10;
                     break;
 
                 case "Eólica":
                     Debug.Log("Item de tipo Eólica foi dropado.");
-                    polutionRate = -10;
-                    carbonValue = 300;
+                    polutionRate = -5;
+                    carbonValue = 30;
                     break;
 
                 case "Nuclear":
                     Debug.Log("Item de tipo Nuclear foi dropado.");
                     polutionRate = -2;
-                    carbonValue = 10000;
+                    carbonValue = 100;
                     break;
 
                 case "Recuperacao":
